@@ -6,6 +6,7 @@ package  {
 		public function Tests() {
 			super();
 			addTest(new FizzBuzzerTest("noAnswer"));
+			addTest(new FizzBuzzerTest("fizz"));
 		}
 	}
 }

@@ -1,4 +1,4 @@
-package  {
+package {
 	import asunit.framework.TestCase;
 
 	public class FizzBuzzerTest extends TestCase {
@@ -13,9 +13,19 @@ package  {
 		}
 
 		public function noAnswer():void {
-			assertEquals("", fizzBuzzer.interpret(1));
-			assertEquals("", fizzBuzzer.interpret(2));
-			assertEquals("", fizzBuzzer.interpret(101));
+			assertEquals("", fizzBuzz(1));
+			assertEquals("", fizzBuzz(2));
+			assertEquals("", fizzBuzz(101));
+		}
+
+		private function fizzBuzz(input:uint):String {
+			return fizzBuzzer.interpret(input);
+		}
+
+		public function fizz():void {
+			assertEquals("fizz", fizzBuzz(3));
+			assertEquals("fizz", fizzBuzz(3 * 2));
+			assertEquals("fizz", fizzBuzz(3 * 123));
 		}
 	}
 }
