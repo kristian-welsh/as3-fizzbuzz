@@ -7,6 +7,7 @@ package  {
 			super();
 			addTest(new FizzBuzzerTest("noAnswer"));
 			addTest(new FizzBuzzerTest("fizz"));
+			addTest(new FizzBuzzerTest("buzz"));
 		}
 	}
 }

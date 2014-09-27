@@ -15,17 +15,20 @@ package {
 		public function noAnswer():void {
 			assertEquals("", fizzBuzz(1));
 			assertEquals("", fizzBuzz(2));
-			assertEquals("", fizzBuzz(101));
-		}
-
-		private function fizzBuzz(input:uint):String {
-			return fizzBuzzer.interpret(input);
 		}
 
 		public function fizz():void {
 			assertEquals("fizz", fizzBuzz(3));
 			assertEquals("fizz", fizzBuzz(3 * 2));
-			assertEquals("fizz", fizzBuzz(3 * 123));
+		}
+
+		public function buzz():void {
+			assertEquals("buzz", fizzBuzz(5));
+			assertEquals("buzz", fizzBuzz(5 * 2));
+		}
+
+		private function fizzBuzz(input:uint):String {
+			return fizzBuzzer.interpret(input);
 		}
 	}
 }
