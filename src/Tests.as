@@ -5,7 +5,7 @@ package  {
 	public class Tests extends TestSuite {
 		public function Tests() {
 			super();
-			addTest(new FizzBuzzerTest("firstTest"));
+			addTest(new FizzBuzzerTest("noAnswer"));
 		}
 	}
 }

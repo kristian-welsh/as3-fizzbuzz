@@ -12,8 +12,10 @@ package  {
 			fizzBuzzer = new FizzBuzzer();
 		}
 
-		public function firstTest():void {
-
+		public function noAnswer():void {
+			assertEquals("", fizzBuzzer.interpret(1));
+			assertEquals("", fizzBuzzer.interpret(2));
+			assertEquals("", fizzBuzzer.interpret(101));
 		}
 	}
 }
