@@ -2,6 +2,7 @@ package {
 	import asunit.textui.TestRunner;
 	import flash.display.Sprite;
 	import flash.events.Event;
+	import org.flashdevelop.utils.FlashConnect;
 
 	/**
 	 * A TDD kata.
